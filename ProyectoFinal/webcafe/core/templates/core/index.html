@@ -1,7 +1,9 @@
 {% extends "core/base.html" %}
 
+{% block title %}MundoCafé{% endblock %}
 {% block content%}
 {% load static %}
+
 
 <!-- Video -->
 <div class="video">
@@ -53,7 +55,7 @@
     </section>
 
     <div class="boton contenedor">
-        <a class="boton-enlace" href="historia.html">Aprende más...</a>
+        <a class="boton-enlace" href="{% url 'historia' %}">Aprende más...</a>
     </div>
     
 
