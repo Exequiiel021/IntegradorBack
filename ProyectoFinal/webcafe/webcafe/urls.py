@@ -26,8 +26,5 @@ urlpatterns = [
     path('latte/', views.latte, name="latte"),
     path('capuccino/', views.capuccino, name="capuccino"),
     path('iceCoffe/', views.iceCoffe, name="iceCoffe"),
-    path('masReceta/', views.masReceta, name="masReceta"),
     path('contacto/', views.contacto, name="contacto")
-    
-    
 ]
