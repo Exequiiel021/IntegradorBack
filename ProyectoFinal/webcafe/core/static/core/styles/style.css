@@ -395,11 +395,16 @@ li {
 .cierre {
     text-align: center;
     font-family: "Indie Flower", cursive;
-    margin-bottom: 5rem;
+    margin: 0;
+}
+
+.cierre h2{
+    margin: 0;
 }
 
 .cierre-final {
     font-size: 40px;
+    margin: 0;
 }
 
 /* //FOOTER */

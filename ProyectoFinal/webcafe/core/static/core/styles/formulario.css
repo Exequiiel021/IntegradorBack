@@ -13,13 +13,12 @@
  }
 }
 
-
 /* es un quilombo de containers, los bordes son solo auxiliares después los saco*/
 
 /* contiene el blur y toda la "columna de formulario" con un tamaño máximo = breakpoint mas chico y se queda ahí estancado. y el centrado con margin auto y sus hijos con stretcch*/
 .contacto{
   color: bisque;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
 
   display: flex;
   flex-flow: column nowrap;

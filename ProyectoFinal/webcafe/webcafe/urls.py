@@ -17,14 +17,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
+from contenido import views as cont
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
     path('historia/', views.historia, name="historia"),
-    path('receta/', views.receta, name="receta"),
     path('latte/', views.latte, name="latte"),
     path('capuccino/', views.capuccino, name="capuccino"),
     path('iceCoffe/', views.iceCoffe, name="iceCoffe"),
-    path('contacto/', views.contacto, name="contacto")
+    path('contacto/', views.contacto, name="contacto"),
+    path('db/', cont.db, name="db"),
 ]
+
+# validamos DEBUG
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
